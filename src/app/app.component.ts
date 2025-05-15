@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FirstSubComponentComponent } from './components/first-sub-component/first-sub-component.component'
 import { Todo } from './models/todo'
+import { CounterAppComponent } from './components/counter-app/counter-app.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FirstSubComponentComponent],
+  imports: [RouterOutlet, FirstSubComponentComponent, CounterAppComponent, CounterAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
